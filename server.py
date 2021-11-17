@@ -51,11 +51,6 @@ class ClientManager(thr.Thread):
     #OVERRIDE
     def run(self):
 
-        # @@@@@@@@@ APERTURA DATABASE @@@@@@@@@@ #
-        conn = sqlite3.connect("./DB_AlphaBot.db")
-        cur = conn.cursor()
-        # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ #
-
         while self.running:
             # ricezione dato e gestione disconnessione
             try:
@@ -77,11 +72,16 @@ class ClientManager(thr.Thread):
                         if dato.split(":")[0] in comandi:
                             comandi[dato.split(":")[0]](dato.split(":")[1])
                         else:
+                            # @@@@@@@@@ APERTURA DATABASE @@@@@@@@@@ #
+                            conn = sqlite3.connect("./DB_AlphaBot.db")
+                            cur = conn.cursor()
+                            # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ #
                             # ritorna la sequenza del movimento 
-                            sequenza = return_sequenza(dato, cur=cur)
+                            sequenza = return_sequenza(movimento=dato, cur=cur)
+                            conn.close()
                             
                             # se movimento diverso da False (dato non trovato)
-                            if sequenza != False:
+                            if sequenza is not None:
                                 # faccio fare il movimento al robot
                                 for singolo_comando in sequenza.split(","):
                                     print(singolo_comando)
@@ -170,7 +170,7 @@ def return_sequenza(movimento, cur):
         if row[0] == movimento: return row[1]
 
     # se non trova nulla ritorna false
-    return False
+    return None
 
 def main():
 
