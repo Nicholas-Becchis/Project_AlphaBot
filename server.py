@@ -192,12 +192,13 @@ def main():
     except:
         # IN CASO DI ERRORE NEL PROGRAMMA:
         # chiusura thread
-        for client in clients:
-            client.running = False
-            sleep(0.5)
-            client.connection.close()
-            sleep(0.5)
-            client.join()
+       if len(clients) > 0:
+         for client in clients:
+             client.running = False
+             sleep(0.5)
+             client.connection.close()
+             sleep(0.5)
+             client.join()
 
         # chiusura socket
         s.close()
