@@ -19,7 +19,7 @@ These movements are stored in a database (**DB_AlphaBot.db**)
 | Name        | Description                         | Video|
 | :---------- | :---------------------------------- | :-------------------------------- |
 | `ZigZag`    | ![ZiZag image](./img/ZigZag.png)    | ![gif not present](./img/ZigZag.gif) |
-| `Cerchio`   | ![Cerchio image](./img/Cerchio.png) | ![gif](./img/Cerchio (1).gif) |
+| `Cerchio`   | ![Cerchio image](./img/Cerchio.png) | ![gif](./img/Cerchio (1).gif)|
 | `Otto`      | ![Otto image](./img/Otto.png)       | ![gif not present](./img/Otto.gif) |
 | `Slalom`    | ![Slalom image](./img/Slalom.png)   | ![gif not present](./img/Slalom.gif) |
 | `720`       | ![720 image](./img/Cerchio.png)     | ![gif not present](./img/720.gif) |
