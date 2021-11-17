@@ -30,7 +30,7 @@ gestione_motori.stop()
 # SOCKET #
 s = sck.socket(sck.AF_INET, sck.SOCK_STREAM)
 s.bind(("0.0.0.0", 5000))
-s.listen(1)
+s.listen()
 #-----------#
 # THREAD #
 lock_invio_dati = thr.Lock()
