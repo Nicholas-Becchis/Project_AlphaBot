@@ -22,7 +22,7 @@ These movements are stored in a database (**DB_AlphaBot.db**)
 | `Cerchio`   | ![Cerchio image](./img/Cerchio.png) | ![gif](./img/cerchio.gif)|
 | `Otto`      | ![Otto image](./img/Otto.png)       | ![gif not present](./img/Otto.gif) |
 | `Slalom`    | ![Slalom image](./img/Slalom.png)   | ![gif not present](./img/Slalom.gif) |
-| `720`       | ![720 image](./img/Cerchio.png)     | ![gif not present](./img/720.gif) |
+| `720`       | ![720 image](./img/Cerchio.png)     | ![gif](./img/cerchio.gif) |
 
 
 ## Authors
