@@ -7,7 +7,7 @@ Client and server(TCP)  which allows you to control the alphabot robot, thanks a
 
 | Name      | Description                        | Video |
 | :-------- | :--------------------------------- | :------------------------- |
-| `f:time`  | This command allows the AlphaBot to move **forward** for a certain time (based on the **time** value)          | ![gif not present](./img/f.gif)|
+| `f:time`  | This command allows the AlphaBot to move **forward** for a certain time (based on the **time** value)          | ![gif](./img/fAlphaBot.gif)|
 | `b:time`  | This command allows the AlphaBot to move **backwards** for a certain time (based on the **time** value)        | ![gif not present](./img/b.gif)|
 | `l:agle`  | This command allows the AlphaBot to rotate to the **left** for a certain angle (based on the **angle** value)  | ![gif not present](./img/l.gif)|
 | `r:angle` | This command allows the AlphaBot to rotate to the **right** for a certain angle (based on the **angle** value) | ![gif not present](./img/r.gif)|
