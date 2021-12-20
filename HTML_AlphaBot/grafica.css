@@ -1,0 +1,25 @@
+#testa{
+    padding: 1cm;
+    background-color: rgb(3, 6, 201);
+    margin: -10;
+}
+
+#titolo{text-align: center;}
+
+#logo{
+    margin: 0.5cm;
+}
+
+#comandi{
+    background: rgb(232, 243, 247);
+    margin: 0.5cm;   
+}
+
+#tblComandi{
+    margin-left: 500px;
+}
+
+#rasp{
+    margin-top: 3cm;
+}
+
